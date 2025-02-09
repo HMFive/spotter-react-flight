@@ -5,6 +5,7 @@ import App from './App.tsx'
 import {Provider} from "react-redux";
 import {createTheme, ThemeProvider} from "@mui/material";
 import {store} from "./store/store.ts";
+import {Home} from "./pages/home.tsx";
 const theme = createTheme({
 
 });
@@ -12,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
       <Provider store={store}>
           <ThemeProvider theme={theme}>
-              <App></App>
+              <Home></Home>
           </ThemeProvider>
       </Provider>
   </StrictMode>,
